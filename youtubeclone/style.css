@@ -1,0 +1,240 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    position: fixed;
+    padding-top: 0px;
+    gap: 250px;
+    width: 100%;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0px;
+    height: 200vh;
+ 
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:50px;
+}
+
+.nav-center {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.logo {
+    height: 60px;
+
+}
+
+.mic {
+    height: 30px;
+}
+
+.search {
+    width: 400px;
+    height: 30px;
+    border-radius: 16px;
+    border-color: black;
+}
+
+.bell {
+    height: 30px;
+}
+
+.profile {
+    height: 50px;
+    border-radius: 30px;
+}
+
+.create {
+    font-size: 20px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+body {
+    margin: 0; 
+}
+
+.container {
+    display: flex;
+
+}
+
+.sidebar-right {
+    width: 200px;
+    height: 10000px;
+    background-color: white;
+    position: fixed; 
+    padding-top: 60px;
+    z-index: ;
+  
+}
+
+.side-element {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    height: 25px;
+    padding: 7px;
+    gap: 10px;
+    padding-left: 10px;
+    padding-top: 50px;
+
+}
+
+.name {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.home-video {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding-left: 200px;
+   padding-top: 100px;
+}
+
+.tumb-img {
+    height: 213px;
+    padding: 20px;
+    border-radius: 35px;
+    align-items: center;
+}
+
+.tumb-d {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 15px;
+    align-items: center;
+}
+
+.channel-logo {
+    height: 25px;
+    border-radius: 30px;
+}
+
+.flex-box {
+    padding: 1px;
+    line-height: 1px;
+}
+
+.vid-d {
+    font-size: 17px;
+}
+
+.likes-count {
+    padding-left: 20px;
+}
+.flex-box {
+    line-height: 1px;
+}
+
+.fst-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.short-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    justify-content: center;
+    padding-left: 500px;
+
+}
+
+.liked-video {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 150px;
+    gap: 40px;
+    font-size: 25px;
+    border: 1px;
+    background-color: whitesmoke;
+    width: 1200px;
+    height: 70px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.liked-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .nav-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-center {
+        justify-content: flex-start;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .sidebar-right {
+        width: 100%;
+        position: static;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .home-video {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .tumb-img {
+        max-width: 100%;
+        margin: 5px;
+    }
+
+    .liked-video {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-left, .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo, .mic, .bell, .profile {
+        margin: 5px;
+    }
+}
