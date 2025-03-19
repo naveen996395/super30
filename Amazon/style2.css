@@ -1,0 +1,222 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+  }
+  
+  
+  .navbar-main {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #232f3e;
+    color: white;
+    flex-wrap: wrap;
+    overflow-x: auto; 
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .nav-amazon img {
+    height: 40px;
+  }
+  
+
+
+  .nav-search {
+    flex-grow: 1;
+    padding: 5px;
+    padding-left: 50px;
+    display: flex;
+  }
+  
+  .nav-search input {
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 3px solid orange;
+  }
+  
+  .navbar-2 {
+    display: flex;
+    background-color: #091522;
+    color: white;
+    overflow-x: auto; 
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  
+  .navbar-2 a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  
+
+  .home-img img {
+    width: 100%;
+  }
+  
+  
+  .all-products {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap; 
+  }
+  
+  .all-products div {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .all-products img {
+    width: 100%;
+    display: block;
+  }
+  
+  .all4 {
+      font-size: 16px;
+      padding: 10px;
+  }
+  
+  
+  .bikes-heading,
+  .head-acc {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .bikes,
+  .ele-nics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  .bikes img,
+  .ele-nics img {
+    width: 20%;
+    margin: 10px;
+    display: block;
+  }
+  
+
+  .last-data {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #091522;
+    color: white;
+    flex-wrap: wrap; 
+  }
+  
+  .data-cell {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  
+  .data-head {
+    margin-bottom: 10px;
+  }
+  
+  .data-cell a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .amazon-end,
+  .last {
+    text-align: center;
+    padding: 10px;
+    background-color:  #232f3e;
+    color: #ddd;
+  }
+  
+  .amazon-end img {
+    height: 110px;
+  }
+  
+
+  @media (max-width: 168px) {
+    .navbar-main {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .nav-adress,
+    .nav-sign,
+    .nav-return,
+    .nav-cart {
+      text-align: center;
+    }
+  
+    .all-products div,
+    .bikes img,
+    .ele-nics img,
+    .data-cell {
+      width: 45%; 
+    }
+  
+    .last-data {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar-2{
+        overflow-x: scroll;
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .all-products div,
+    .bikes img,
+    .ele-nics img,
+    .data-cell,
+    .slideshow
+  }
+
+  #slideshow {
+    width: 1455px; 
+    height: 500px; 
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #slideshow img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+    object-fit: cover;
+  }
+  
+  #slideshow img.active {
+    opacity: 1;
+  }
+
+  .side-img {
+    width: 1500px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 0px;
+  }
+
+  .side-img {
+    width: 100vw; 
+    height: auto;
+    display: block;
+    justify-content: space-around;
+  }
